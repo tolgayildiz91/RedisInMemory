@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+    Product product = ViewBag.product as Product;
+    Product product2 = ViewBag.product3 as Product;
+}
+
+<h1>Show</h1>
+@* <h2>@ViewBag.name</h2>
+<h2>@ViewBag.surname</h2>
+ *@
+
+<h2>@product.ID => @product.Name</h2>
+<h2>@product2.ID => @product2.Name</h2>
