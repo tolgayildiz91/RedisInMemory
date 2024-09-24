@@ -29,6 +29,9 @@ namespace RedisExchangeAPI.Web.Controllers
 
             var value2 = db.StringGetRange("name", 0, 3);
             var valueLength = db.StringLength("name");
+
+            //Byte[] resimByte = default(byte[]);
+            //db.StringSet("resim",resimByte);
       
             db.StringIncrement("ziyaretci");
             // var count = db.StringDecrementAsync("ziyaretci", 1).Result;
